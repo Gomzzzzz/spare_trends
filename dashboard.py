@@ -17,8 +17,8 @@ st.set_page_config(page_title="Spare Parts Dashboard", layout="wide")
 # Load dataset from ZIP file
 @st.cache_data
 def load_data():
-    zip_path = "notebooks/spare-parts.zip"
-    extract_path = "notebooks/extracted"
+    zip_path = "spare-parts.zip"
+    extract_path = "extracted"
     
     
     with zipfile.ZipFile(zip_path, 'r') as zip_ref:
